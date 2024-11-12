@@ -30,8 +30,8 @@ class Car:
         elif numbers:
             for i in numbers:
                 quantity += 1
-                if 6<quantity>6:
-                    raise IncorrectCarNumbers('Неверная длина номера')
+            if quantity != 6:
+                raise IncorrectCarNumbers('Неверная длина номера')
         else:
             return True
 
